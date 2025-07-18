@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Analytics } from '@vercel/analytics/react'
 import { Sparkles, Loader2, MessageSquareText } from "lucide-react"; // icons
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-tr from-purple-100 via-indigo-100 to-blue-100">
       <Navbar />
-
+    
       <main className="flex-grow flex items-center justify-center p-4 mt-20">
         <div className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-8 animate-fade-in transition-all">
           <h1 className="text-4xl font-bold text-center text-indigo-700 mb-4 tracking-wide flex items-center justify-center gap-2">
@@ -67,7 +68,7 @@ function App() {
               )}
             </button>
           </form>
-
+               <Analytics />
           <div className="mt-8 bg-indigo-50 p-6 rounded-xl border border-indigo-200 shadow-inner transition-all">
             <h2 className="text-xl font-semibold text-indigo-800 mb-2">
               Anvika says:
