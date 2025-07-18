@@ -15,7 +15,7 @@ function App() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/ask-ai", { prompt });
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/ask-ai`, { prompt });
       setResponse(res.data.reply || "No response from Anvika.");
     } catch (err) {
       console.error("Error:", err);
