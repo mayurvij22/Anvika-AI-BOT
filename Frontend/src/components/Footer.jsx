@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaGlobe } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="w-full bg-white shadow-inner py-4 mt-10 text-center text-sm text-gray-600">
-     <p>© 2025 mayoZ. Built with 🧡 by Mayur.</p>
+     <p>© 2025 mayorZ. Built with 🧡 by Mayur.</p>
       <div className="mt-2 flex justify-center gap-6 text-blue-600 text-lg">
         <a
           href="https://myr-mayurvij22s-projects.vercel.app/"
